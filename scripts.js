@@ -1,7 +1,7 @@
-import { iniciarServicos } from "./views/servicosView.js";
-import { iniciarFormulario } from "./views/contatoView.js";
-import { iniciarCountdown } from "./controllers/countdownController.js";
-import { iniciarProjeto } from "./controllers/projetosController.js";
+import { iniciarServicos } from "./views/servicos.js";
+import { iniciarFormulario } from "./views/contato.js";
+import { iniciarCountdown } from "./controllers/countdown.js";
+import { iniciarProjeto } from "./controllers/projetos.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   iniciarServicos();

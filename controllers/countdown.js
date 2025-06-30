@@ -1,5 +1,5 @@
-import { getTargetEndTime } from "../models/countdownModel.js";
-import { atualizarCountdown, encerrarOferta } from "../views/countdownView.js";
+import { getTargetEndTime } from "../models/countdown.js";
+import { atualizarCountdown, encerrarOferta } from "../views/countdown.js";
 
 export function iniciarCountdown() {
   const displayElements = {
