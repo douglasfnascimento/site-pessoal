@@ -1,0 +1,860 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #a6a6a6;
+    font-size: 16px;
+}
+a {
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #66a3ff;
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.2rem;
+}
+h1 {
+    color: #66a3ff;
+    font-size: 3.5rem;
+
+}
+h2 {
+    font-size: 2.8rem;
+    color: #fff;
+}
+
+h3 {
+    color: #fff;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.80)), url(images/background-header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 2%;
+}
+
+
+
+.whatsapp-button:hover {
+    background-color: #508bff;
+    color: #000;
+}
+
+.whatsapp-button p:hover {
+    color: #000;
+}
+
+.whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: #000;
+    padding: 0.3125rem 1.25rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-left: 0%;
+}
+
+.whatsapp-button .icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.3rem;
+}
+
+.whatsapp-button p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.whatsapp-button .fa-whatsapp {
+    font-size: 1.2rem;
+}
+
+nav {
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 13%;
+    z-index: 1000;
+    padding-top: 0.8%;
+    padding-bottom: 0.8%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #508BFF;
+}
+
+#hero {
+
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+#hero img {
+    width: 9.375rem;
+    height: 9.375rem;
+    border-radius: 50%;
+    margin-bottom: 0.625rem;
+}
+
+#hero h1 {
+    display: inline-block;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+#hero p {
+    font-size: 1.5625rem;
+    font-weight: 600;
+}
+
+#servicos {
+    background-color: #1F2233;
+    text-align: center;
+    padding: 5%;
+}
+
+#servicos h2 {
+    margin-bottom: 3.125rem;
+}
+
+#servicos h3 {
+    font-size: 2.1875rem;
+}
+
+
+
+.servicos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.servico {
+    width: calc(25% - 1.25rem);
+    padding: 0;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.servico i {
+    background-color: #508BFF;
+    color: #1F2233;
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    display: inline-flex; 
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+
+.servico-conteudo {
+    position: relative; 
+}
+
+.servico-detalhes {
+    display: none; 
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.servico-detalhes.visible {
+    display: block; 
+    opacity: 1;
+    max-height: 500px; 
+}
+
+.toggle-details-btn {
+    background-color: #508BFF;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.toggle-details-btn:hover {
+    background-color: #3a75e0;
+}
+
+/* styles.css */
+#curso-swift {
+    background-color: #1F2233;
+    padding: 5%;
+    color: #fff;
+}
+
+#curso-swift .container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#curso-swift h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #fff;
+}
+
+.curso-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+}
+
+.curso-imagem {
+    flex: 1;
+    min-width: 280px;
+    text-align: center; 
+}
+
+.curso-imagem img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.curso-info {
+    flex: 1.5; 
+    min-width: 300px;
+}
+
+.curso-info h3 {
+    color: #66a3ff; 
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.curso-info p {
+    color: #a6a6a6;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.promocao {
+    background-color: #1F2233; 
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    border: 1px solid #508BFF;
+}
+
+.promocao h4 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.preco-original {
+    font-size: 1rem;
+    color: #bbb;
+}
+
+.preco-promocional {
+    font-size: 1.8rem;
+    color: #66a3ff; 
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.preco-promocional strong {
+    font-size: 2.2rem; 
+}
+
+.oferta-acaba {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+#countdown-timer {
+    font-size: 1.5rem; 
+    font-weight: bold;
+    color: #fff;
+    background-color: #508BFF; 
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block; 
+}
+
+#countdown-timer span {
+    padding: 0 5px;
+}
+
+
+#sobre {
+    background-color: #2a2f45;
+    padding: 5%;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+#sobre .content {
+    display: flex;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+#sobre .image {
+    width: 25.625rem;
+}
+
+#sobre .image img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+#sobre .text {
+    display: block;
+    margin-left: 3.125rem;
+    max-width: 61.25rem;
+}
+
+#sobre h2 {
+    padding-bottom: 0.9375rem;
+}
+
+#contato {
+    background-color: #1F2233;
+    padding: 5% 2%;
+    color: #fff;
+}
+
+#contato .container {
+    max-width: 1100px; 
+    margin: 0 auto;
+}
+
+
+.contato-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; 
+    justify-content: space-between;
+}
+
+.contato-coluna {
+    flex: 1; 
+    min-width: 300px; 
+}
+
+.contato-coluna h3 {
+    color: #fff;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.social-media .social {
+    margin-bottom: 1rem;
+}
+
+.social-media .social a {
+    margin-right: 1rem;
+    color: #fff; /* Cor dos ícones */
+    transition: color 0.3s;
+}
+.social-media .social a:hover {
+    color: #66a3ff; /* Cor no hover */
+}
+
+.social-media p a {
+    color: #fff;
+    font-size: 1.1rem;
+}
+.social-media p a:hover {
+    color: #66a3ff;
+}
+
+
+.form-contato .form-group {
+    margin-bottom: 1rem;
+}
+
+.form-contato label {
+    display: block;
+    color: #ccc;
+    margin-bottom: 0.5rem;
+}
+
+.form-contato input[type="text"],
+.form-contato input[type="email"],
+.form-contato textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #444;
+    background-color: #2a2f45;
+    color: #fff;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+.form-contato input[type="text"]:focus,
+.form-contato input[type="email"]:focus,
+.form-contato textarea:focus {
+    outline: none;
+    border-color: #508BFF;
+    box-shadow: 0 0 5px rgba(80, 139, 255, 0.5);
+}
+
+.form-contato textarea {
+    resize: vertical;
+}
+
+.form-contato .btn-enviar {
+    background-color: #508BFF;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.form-contato .btn-enviar:hover {
+    background-color: #3a75e0;
+}
+
+.error-message {
+    display: block;
+    color: #ff6b6b;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+    min-height: 1em; /* Para evitar saltos de layout */
+}
+
+.form-status-message {
+    margin-top: 1rem;
+    font-weight: 500;
+}
+.form-status-message.success {
+    color: #4CAF50;
+}
+.form-status-message.error {
+    color: #ff6b6b;
+}
+
+
+
+
+.social {
+    margin-bottom: 2rem;
+}
+
+.social a {
+    margin: 0 0.625rem;
+}
+
+.social .icone-hover {
+    display: none;
+
+}
+
+.social .icone:hover .icone-normal {
+    display: none;
+}
+
+.social .icone:hover .icone-hover {
+    display: inline-block;
+}
+
+#contato p a {
+    text-decoration: none;
+    padding: 0.3125rem 0.625rem;
+    border-radius: 10px;
+    color: #fff;
+}
+
+#contato p a:hover {
+    text-decoration: none;
+    padding: 0.3125rem 0.625rem;
+    border-radius: 10px;
+    color: #66a3ff;
+}
+
+footer {
+    text-align: center;
+    padding: 1.25rem;
+    background-color: #141727;
+    color: #fff;
+}
+
+#contato {
+    background-color: #1F2233;
+}
+
+#contato .container {
+    padding: 2.5rem;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        font-size: 2.6rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    nav {
+        margin-left: -10px;
+    }
+    
+    
+
+    .whatsapp-button p {
+        display: none;
+    }
+
+    .whatsapp-button {
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        padding: 8px 10px; 
+    }
+    
+    .whatsapp-button .fa-whatsapp {
+        display: block;
+        margin: 0 auto; 
+        position: relative;
+        top: 0; 
+        font-size: 1.3rem; 
+    }
+    
+    .whatsapp-button .icon-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        margin-right: 0;
+    }
+
+
+    #hero .text {
+        width: 88%;
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+
+    #hero p {
+        font-size: 1.2rem;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+
+    #sobre .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #sobre .image {
+        width: 100%; 
+        text-align: center;
+    }
+
+    #sobre .image img {
+        max-width: 50%;
+        border-radius: 50%;
+        margin-bottom: 0;
+
+    }
+
+    #sobre h2 {
+        text-align: center;
+    }
+
+    #sobre .text {
+        margin-left: 0;
+        margin-top: 1.25rem;
+        max-width: none
+    }
+
+    .servico {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px;
+        width: 88%;
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+
+
+    .servico-conteudo {
+        flex-grow: 1;
+        width: calc(100% - 220px);
+        max-width: none;
+        text-align: left;
+    }
+
+    #servicos .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #servicos p {
+        margin-left: 0;
+        margin-top: 0;
+        text-align: left;
+        width: 100%;
+        max-width: none;
+    }
+
+    .servicos-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #servicos {
+        padding: 5% 2%;
+    }
+
+    #servicos h2 {
+        margin-bottom: 2rem;
+    }
+
+    #servicos h3 {
+        font-size: 1.5rem;
+    }
+
+    .servico i {
+        margin-right: 20px;
+    }
+
+
+    .contato-wrapper {
+        flex-direction: column;
+    }
+    .contato-coluna {
+        min-width: 100%; 
+        text-align: center;
+    }
+    .social-media .social {
+        justify-content: center; 
+    }
+    .form-contato {
+        text-align: left;
+    }
+
+    .curso-content {
+        flex-direction: column;
+    }
+    .curso-info h3 {
+        text-align: center;
+    }
+    .promocao {
+        text-align: center;
+    }
+     #countdown-timer {
+        font-size: 1.2rem;
+    }
+
+    .curso-imagem img {
+        max-width: 60%;
+        height: auto;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 500px) {
+    
+    
+}
+@media only screen and (max-width: 400px) {
+    
+}
+
+@media only screen and (max-width: 300px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
+    }
+
+
+    #contato p a {
+        font-size: 0.5rem;
+    }
+
+    .whatsapp-button {
+        display: flex;
+        justify-content: center;
+        background-color: rgb(80, 139, 255);
+        color: #000;
+        padding: 0.3125rem 1.25rem;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+        align-items: center;
+        margin: 1rem auto 0;
+    }
+    
+    .whatsapp-button .icon-container {
+        display: inline-block;
+        max-width: 20px;
+        margin-right: 0.3rem;
+    }
+    
+
+    .whatsapp-button p {
+        display: inline-block;
+    }
+
+    #hero {
+        margin-top: 2rem;
+    }
+
+    .menu {
+        display: none;
+    }
+}
+/* Seção Projetos */
+#projetos {
+    background-color: #2a2f45;
+    padding: 5%;
+    color: #fff;
+}
+
+#projetos h2 {
+    font-size: 2.8rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+#projetos-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projeto-item {
+    background-color: #1F2233;
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid #508BFF;
+    transition: transform 0.3s ease;
+}
+
+.projeto-item:hover {
+    transform: translateY(-5px);
+}
+
+.projeto-item h3 {
+    color: #66a3ff;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.projeto-item p {
+    font-size: 1rem;
+    color: #a6a6a6;
+    margin-bottom: 0.5rem;
+}
+
+.projeto-item a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #508BFF;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.projeto-item a:hover {
+    background-color: #3a75e0;
+}
+
+/* Responsividade para projetos */
+@media only screen and (max-width: 768px) {
+    #projetos-container {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+
+    .projeto-item {
+        margin-bottom: 2rem;
+    }
+}

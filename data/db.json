@@ -1,0 +1,25 @@
+{
+  "projetos": [
+    {
+      "id": 1,
+      "titulo": "Gerenciador de Tarefas",
+      "descricao": "Gerenciador de tarefas básico desenvolvido durante treinamento de React.",
+      "tecnologias": ["React", "Tailwind CSS", "Vite"],
+      "link": "https://gerente-de-tarefas.vercel.app"
+    },
+    {
+      "id": 2,
+      "titulo": "Anote",
+      "descricao": "Aplicativo básico de notas, com a possibilidade de edição e exclusão de notas cadastradas.",
+      "tecnologias": ["Swift", "SwiftUI", "CoreData"],
+      "link": "https://github.com/douglasfnascimento/Anote"
+    },
+    {
+      "id": 3,
+      "titulo": "Aulas de macOS",
+      "descricao": "Site simples desenvolvido por mim para treinar meus conhecimentos em HTML e CSS.",
+      "tecnologias": ["HTML", "CSS", "JavaScript"],
+      "link": "https://github.com/douglasfnascimento/Aulas-de-macOS"
+    }
+  ]
+}

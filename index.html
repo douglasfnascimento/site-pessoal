@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Douglas Nascimento – Desenvolvedor, Redator e Designer</title>
+    <meta name="description"
+        content="Site pessoal de Douglas Nascimento, desenvolvedor, designer e jornalista. Conheça meus serviços e saiba mais sobre minha trajetória profissional.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="https://api.whatsapp.com/send?phone=5588988762694" target="_blank" class="whatsapp-button">
+                <div class="icon-container">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <p>WhatsApp</p>
+            </a>
+
+            <ul class="menu">
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#curso-swift">Curso</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div id="hero">
+            <img src="images/profile.jpeg" alt="Douglas">
+            <div class="text">
+                <h1>Douglas Nascimento</h1>
+                <p>Desenvolvedor, designer e redator</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="servicos">
+            <div class="container">
+                <h2>Meus serviços</h2>
+                <div class="servicos-container">
+                    <div class="servico">
+                        <i class="fas fa-pencil-ruler fa-3x"></i>
+                        <div class="servico-conteudo">
+                            <h3>UI/UX</h3>
+                            <button class="toggle-details-btn" aria-expanded="false" aria-controls="details-uiux">+
+                                Detalhes</button>
+                            <p class="servico-detalhes" id="details-uiux">Realizo todo o trabalho de design para o seu
+                                site, obedecendo às diretrizes de design mais atuais no mundo da tecnologia.</p>
+                        </div>
+                    </div>
+                    <div class="servico">
+                        <i class="fas fa-code fa-3x"></i>
+                        <div class="servico-conteudo">
+                            <h3>WEB</h3>
+                            <button class="toggle-details-btn" aria-expanded="false" aria-controls="details-web">+
+                                Detalhes</button>
+                            <p class="servico-detalhes" id="details-web">Desenvolvimento de sites para ampliar e
+                                divulgar com mais facilidade o seu negócio com um cartão de visitas para a web.</p>
+                        </div>
+                    </div>
+                    <div class="servico">
+                        <i class="fas fa-mobile-alt fa-3x"></i>
+                        <div class="servico-conteudo">
+                            <h3>MOBILE</h3>
+                            <button class="toggle-details-btn" aria-expanded="false" aria-controls="details-mobile">+
+                                Detalhes</button>
+                            <p class="servico-detalhes" id="details-mobile">Atualmente, estou me aperfeiçoando no
+                                desenvolvimento para Swift, a linguagem de programação para os sistemas operacionais da
+                                Apple.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projetos">
+            <div class="container">
+                <h2>Meus Projetos</h2>
+                <div id="projetos-container"></div>
+            </div>
+        </section>
+        <section id="curso-swift" class="fade-in-section">
+            <div class="container">
+                <div class="curso-content">
+                    <div class="curso-imagem">
+                        <img src="images/Swift_icon.png" alt="Curso de Desenvolvimento Swift">
+                    </div>
+                    <div class="curso-info">
+                        <h3>Aprenda Swift do zero!</h3>
+                        <p>Domine a linguagem de programação da Apple e crie aplicativos incríveis para iPhone, iPad e
+                            Mac. Curso completo com projetos práticos e suporte individualizado.</p>
+                        <div class="promocao">
+                            <h4>Oferta especial de lançamento!</h4>
+                            <p class="preco-original">De <del>R$ 399,90</del></p>
+                            <p class="preco-promocional">Por apenas <strong>R$ 199,95</strong> (50% OFF)</p>
+                            <p class="oferta-acaba">A oferta acaba em:</p>
+                            <div id="countdown-timer">
+                                <span id="days">03</span> dias
+                                <span id="hours">00</span> horas
+                                <span id="minutes">00</span> minutos
+                                <span id="seconds">00</span> segundos
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <div class="content">
+                <div class="image">
+                    <img src="images/douglas.jpeg" alt="Douglas">
+                </div>
+                <div class="text">
+                    <h2>Sobre mim</h2>
+                    <p></p>
+                    <p>Graduando de Engenharia de Software pela Universidade Federal do Ceará (UFC), auto em várias
+                        faces no setor de desenvolvimento, especialmente no que se refere ao desenvolvimento web e
+                        design. Também está se especializando em desenvolvimento mobile para iOS e demais sistemas da
+                        Apple.</p>
+                    <br>
+                    <p>Atuo desde 2021 como redator no site especializado sobre a Apple, o <a
+                            href="https://macmagazine.com.br/post/author/douglas/" target="_blank">MacMagazine</a>,
+                        escrevendo diariamente matérias sobre novidades relacionadas à empresa e aos apps que a
+                        circundam.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="container">
+                <div class="contato-wrapper">
+                    <div class="contato-coluna social-media">
+                        <div class="social">
+                            <a href="https://www.linkedin.com/in/douglas-nascimento1/" class="icone" target="_blank">
+                                <i class="fab fa-linkedin fa-2x"></i>
+                            </a>
+                            <a href="https://www.instagram.com/douglas.nascimento/" class="icone" target="_blank">
+                                <i class="fab fa-instagram fa-2x"></i>
+                            </a>
+                            <a href="https://mastodon.social/@douglasnascimento" class="icone" target="_blank">
+                                <i class="fab fa-mastodon fa-2x"></i>
+                            </a>
+                        </div>
+                        <p><a href="mailto:douglasnascimentow@gmail.com"
+                                target="_blank">douglasnascimentow@gmail.com</a></p>
+                    </div>
+
+                    <div class="contato-coluna form-contato">
+                        <h3>Envie uma mensagem</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="nome">Nome:</label>
+                                <input type="text" id="nome" name="nome" required>
+                                <span class="error-message" id="nomeError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail:</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="mensagem">Mensagem:</label>
+                                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                                <span class="error-message" id="mensagemError"></span>
+                            </div>
+                            <button type="submit" class="btn-enviar">Enviar</button>
+                            <p id="formStatus" class="form-status-message"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 — Douglas Nascimento</p>
+    </footer>
+    <script type="module" src="scripts.js"></script>
+</body>
+
+</html>
